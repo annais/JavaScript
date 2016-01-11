@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>FormularioCompletito</title>
+	<script type="text/javascript" src="js/codigo.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Formulario Completito</legend>
+			Nombre: <input type="text" id="nombre">
+			<span class="error" id="enombre"></span><br><br>
+			Apellidos: <input type="text" id="apellidos">
+			<span class="error" id="eapellidos"></span><br><br>
+			Telefono: <input type="number" id="telefono">
+			<span class="error" id="etelefono"></span><br><br>
+			Fecha de nacimiento: <input type="date" id="fecha">
+			<span class="error" id="efecha"></span><br><br>
+			Email: <input type="email" id="email">
+			<span class="error" id="eemail"></span><br><br>
+			DNI: <input type="text" id="dni">
+			<span class="error" id="edni"></span><br><br>
+			Nº Cuenta: <input type="text" id="ncuenta">
+			<span class="error" id="encuenta"></span><br><br>
+			Curriculum digital: <input type="url" id="curriculum">
+			<span class="error" id="ecurriculum"></span><br><br>
+			Estado: <br>
+  			<select>
+  				<option>Soltero/a</option>
+  				<option>Casado/a</option>
+  				<option>Divorciado/a</option>
+  				<option>Separado/a</option>
+  			</select><br><br>
+			Sexo:<br><input type="radio" name="sexo" value="femenino" checked> Femenino<br>
+  			<input type="radio" name="sexo" value="masculino"> Masculino<br><br>
+  			Estudios realizados: <br>
+  			<input type="checkbox" name="estudios" value="primaria" checked> Primaria<br>
+  			<input type="checkbox" name="estudios" value="eso"> E.S.O.<br>
+  			<input type="checkbox" name="estudios" value="bachiller"> Bachiller<br>
+  			<input type="checkbox" name="estudios" value="gm"> Grado Medio<br>
+  			<input type="checkbox" name="estudios" value="gs"> Grado Superior<br>
+  			<input type="checkbox" name="estudios" value="grado"> Grado<br>
+  			<input type="button" id="enviar" name="enviar" value="Enviar" >
+		</fieldset>
+	</form>
+</body>
+</html>
