@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Sessión</title>
+	<script type="text/javascript" src="codigo.js"></script>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<div id="cuadro">
+	<form>
+		Usuario: <input type="text" id="user">
+		Contraseña: <input type="text" id="key">
+		<input type="button" id="boton" value="enviar">
+	</form>
+	<p>Ejemplo realizado con localStorage.</p>
+	<p id="info"></p>
+	</div>
+	<div id="datos">
+		<h1>Sessión</h1>
+		<p>Diferencia entre localStorage y sessionStorage:</p>
+		<p>sessionStorage sólo está disponible durante la sesión del navegador y se eliminara cuando se cierra la ventana.</p>
+		<p>localStorage los datos seran almacenados y siempre estaran disponibles, pero hay que tener en cuenta que pueden ser borrados por el usuario.</p>
+		<p>A diferencia de cookies, el límite de almacenamiento es mucho mayor (al menos 5 MB) y la información nunca se transfiere al servidor.</p>
+		<p>Almacenamiento local es por origen (por dominio y protocolo). Todas las páginas, de un origen, pueden almacenar y acceder a los mismos datos.</p>
+		<p>window.localStorage: almacenes de datos sin fecha de caducidad.</p>
+		<p>window.sessionStorage: almacena los datos para un período de sesiones.</p>
+		
+	</div>
+</body>
+</html>

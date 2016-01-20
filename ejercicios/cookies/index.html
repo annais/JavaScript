@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Cookies</title>
+	<script type="text/javascript" src="codigo.js"></script>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<div id="cuadro">
+	<form>
+		Usuario: <input type="text" id="user">
+		Contraseña: <input type="text" id="key">
+		<input type="button" id="boton" value="enviar">
+	</form>
+	<p id="info"></p>
+	</div>
+	<div id="datos">
+		<h1>Cookies</h1>
+		<p>Las cookies permiten almacenar información del usuario en las páginas web.</p>
+		<p>Las cookies son datos, que se almacena en archivos de texto en el equipo.</p>
+		<p>Las cookies se crearón para guardar datos del usuario como recordar su nombre, ya que cuando la conexión con el servidor web se cierra estos datos que no son almacenados en ningúna base de datos se borran.</p>
+		<p>Las cookies se guardan en pares de nombre-valor: usuario=Anais.</p>
+		<p>Para leer, crear y borrar cookies se usa: document.cookies.</p>
+		<p>Ejemplo: document.cookie = "usuario=Anais"</p>
+		<p>Tambien se le puede poner una fecha de caducidad, si no es especificada se eliminara cuando se cierre el navegador.</p>
+		<p>Ejemplo: document.cookie = "usuario=Anais;expire=Thu, 18 Dec 2016 12:00:00 UTC"</p>
+		<p>Se le puede especificar de donde pertenece la cookie, por defecto pertenece a la pagina actual.</p>
+		<p>Ejemplo: document.cookie = "usuario=Anais;expire=Thu, 18 Dec 2016 12:00:00 UTC; path=/"</p>
+		<p>Para poder eliminar la cookie solo tiene que cambiarle la fecha por una fecha ya pasada</p>
+	</div>
+</body>
+</html>
