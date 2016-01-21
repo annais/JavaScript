@@ -4,6 +4,7 @@
 		var contrasena = document.getElementById("key");
 		var info = document.getElementById("info");
 		var button = document.getElementById("boton").addEventListener("click", validarCampos);
+		var btnelim = document.getElementById("btnelim").addEventListener("click", eliminarCampos);
 		
 		function validarCampos(){
 			localStorage.setItem("usuario", usuario.value);
@@ -12,6 +13,13 @@
 			info.innerHTML = localStorage.getItem("usuario")+"</br>";
 			info.innerHTML += localStorage.getItem("contrasena")+"</br>";
 			info.innerHTML += "Has enviado: "+contarClick();+" veces.";
+		}
+
+		function eliminarCampos(){
+			localStorage.removeItem("usuario");
+			localStorage.removeItem("contrasena");
+			
+			info.innerHTML = "";
 		}
 
 		function contarClick(){

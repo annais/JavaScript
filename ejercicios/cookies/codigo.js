@@ -4,12 +4,19 @@
 		var contrasena = document.getElementById("key");
 		var info = document.getElementById("info");
 		var button = document.getElementById("boton").addEventListener("click", validarCampos);
+		var btnelim = document.getElementById("btnelim").addEventListener("click", eliminarCampos);
 		
 		function validarCampos(){
 			setCookie("usuario",usuario.value,50);
 			setCookie("contrasena",contrasena.value,50);
 			info.innerHTML = getCookie("usuario")+"<br>";
 			info.innerHTML += getCookie("contrasena")+"<br>";
+		}
+
+		function eliminarCampos(){
+			eliminarCookie("usuario");
+			eliminarCookie("contrasena");
+			info.innerHTML = "";
 		}
 
 		function setCookie(name, value, exdays) {
@@ -32,6 +39,10 @@
 		        } 
 		    }
 		    return "";
+		}
+
+		function eliminarCookie(dato){
+			document.cookie = dato+"=; expires=Thu, 18 Dec 2013 12:00:00 UTC";
 		}
 
 
