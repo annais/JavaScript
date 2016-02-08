@@ -4,7 +4,6 @@
 		document.getElementById("limpiar").addEventListener("click",limpiar);
 
 		if(document.cookie!=""){
-			alert("hola");
 			document.getElementById("nombre").value = getCookie('nombre');
 			document.getElementById("apellido1").value = getCookie('apellido1');
 			document.getElementById("apellido2").value = getCookie('apellido2');
@@ -104,5 +103,6 @@
 		function eliminarCookie(dato){
 			document.cookie = dato+"=; expires=Thu, 18 Dec 2013 12:00:00 UTC";
 		}
+		
 	});
 })();
