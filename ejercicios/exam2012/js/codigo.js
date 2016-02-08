@@ -21,6 +21,7 @@
 			 	mensaje += '<p>'+apellido1+'</p>';
 			 	mensaje += '<p>'+apellido2+'</p>';
 			 	mensaje += '<p>'+fnacimiento+'</p>';
+			 	mensaje += '<p>'+calcularEdad(fnacimiento)+'</p>';
 
 				ventana = window.open("","", "width=200, height=200, top="+0+", left="+0);
 				ventana.document.open();
@@ -60,14 +61,27 @@
 		}
 
 		function comprobarFecha(fecha){
-			var arrayFecha = fecha.split("/");
-			var dia = parseInt(arrayFecha[0]);
-			var mes = parseInt(arrayFecha[1]-1);
-			var anio = parseInt(arrayFecha[2]);
-			var fecha = new Date(anio, mes, dia);
-			if(fecha.getDate() == dia && fecha.getMonth() == mes && fecha.getFullYear() == anio)
+			var newFecha = fecha.split("/");
+			var dia = parseInt(newFecha[0]);
+			var mes = parseInt(newFecha[1]-1);
+			var ano = parseInt(newFecha[2]);
+			var fecha = new Date(ano, mes, dia);
+			if(fecha.getDate() == dia && fecha.getMonth() == mes && fecha.getFullYear() == ano){
 				return true;
+			}
 			return false;
+		}
+
+		function calcularEdad(fecha){
+			var newFecha = fecha.split("/");
+			var dia = parseInt(newFecha[0]);
+			var mes = parseInt(newFecha[1])-1;
+			var ano = parseInt(newFecha[2]);
+			var fecha = new Date(ano, mes, dia);
+			var fechaActual = new Date();
+			var edadMils = parseInt(fechaActual - fecha);
+			var edad = new Date(0, 0, 1, 0, 0, 0, edadMils);
+			return edad.getYear() + " años, " + edad.getMonth() + " meses,  " + (edad.getDate()-1) + " dias.";
 		}
 
 		function limpiar(){
