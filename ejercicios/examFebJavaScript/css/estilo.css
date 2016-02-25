@@ -1,0 +1,22 @@
+body{
+	padding: 2% 5%;
+	font-size: 20px;
+}
+
+span{
+	color: red;
+	font-size: 14px;
+}
+
+#cuadro{	
+	display: flex;
+	direction: column;
+}
+
+form{
+	flex:1;
+}
+
+#derecha{
+	flex: 1;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AnaisJimenezHiguera</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="js/codigo.js"></script>
+	<noscript>Necesitas tener activado JavaScript</noscript>
+</head>
+<body>
+	<h1>Usuario</h1>
+	<div id="cuadro">
+		<form>
+			<label>Nombre</label></br><input type="text" id="nombre" placeholder="Nombre"></br><span id="errorn"></span></br>
+			<label>Apellidos</label></br><input type="text" id="apellidos" placeholder="Apellidos"></br><span id="errora"></span></br>
+			<label>DNI</label></br><input type="text" id="dni" placeholder="00000000X"></br><span id="errord"></span></br>
+			<label>Sexo</label></br>
+			<select id="sexo">
+				<option>Mujer</option>
+				<option>Hombre</option>
+			</select></br><span id="errors"></span></br>
+			<input type="checkbox" id="aceptar"><label>Acepto las condiciones.</label></br><span id="errorc"></span></br>
+			<input type="button" id="crear" value="Nuevo Usuario">
+			<input type="button" id="limpiar" value="Limpiar">
+		</form>
+		
+		<div id="derecha">
+			<div id="info"></div>
+			<ul id='lista'></ul>
+		</div>
+	</div>
+</body>
+</html>
