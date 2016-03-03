@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DAWmana</title>
+	<link rel="stylesheet" href="lightbox/dist/css/lightbox.min.css">
+	<link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/feature-carousel.css" charset="utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+	<div id="pantalla">
+		<div id="titulo"></div>
+		<div id="bombilla"></div>
+		<div id="iesname"></div>
+	</div>
+	<noscript>Your browser does not support JavaScript!</noscript>
+	<header>
+	  <h1>DAWmana</h1>
+	  <p>Evento que desarrola el Instituto Gran Capitán en el que durante una semana, personas que están trabajando en el campo de las nuevas tecnologías, visitan el Instituto para mostrar una serie de ponencias donde se debate y se cuenta sus experiencias en el mundo laboral.</p>
+	  <img src="img/iesGranCapitan.jpg">
+	  <a id="registrado" href="#">Salir</a>
+	  <div id="loginContainer">
+                <a href="#" id="loginButton"><span>Login</span></a>
+                <div style="clear:both"></div>
+                <div id="loginBox">                
+                    <form id="loginForm">
+                        <fieldset id="body">
+                            <fieldset>
+                                <label for="email">Usuario</label>
+                                <input type="text" id="email" />
+                                <span id="euser"></span>
+                            </fieldset>
+                            <fieldset>
+                                <label for="password">Contraseña</label>
+                                <input type="password" id="password" />
+                                <span id="ekey"></span>
+                            </fieldset>
+                            <input type="button" id="login" value="Entrar" />
+                            <label for="checkbox"><input type="checkbox" id="checkbox" />Recordar</label>
+                        </fieldset>
+                        <span><a href="#">¿Olvidaste la contraseña?</a></span>
+                    </form>
+                </div>
+            </div>
+	</header>
+	<nav>
+	    <ul>
+	      	<li><a class="activa" id="inicio" href="#">Inicio</a></li>
+	      	<li><a id="actividades" href="#">Actividades</a>
+	      	</li>
+	      	<li><a id="seo" href="#">Concurso SEO</a></li>
+	      	<li><a id="registro" href="#">Registro</a>
+				<ul>
+					<li><a id="rAsi" href="#">Asistente</a></li>
+					<li class="oculto" id="rPone"><a id="rPon" href="#">Ponente</a></li>
+					<li class="oculto" id="rActi"><a id="rAct" href="#">Actividad</a></li>
+				</ul>
+			</li>
+			<li><a id="ponentes" href="#">Ponentes</a>
+				<ul>
+					<li><a id="pLis" href="#">Lista</a></li>
+					<li><a id="pGal" href="#">Galeria</a></li>
+				</ul>
+			</li>
+	    </ul>
+	</nav>
+	
+	<div id="cuadro">
+		
+	</div>
+
+	<div id="patrocinadores">
+		<h2>Patrocinadores</h2>
+		<div id="patrImg">
+			<img src="img/logos/cosfera.png">
+			<img src="img/logos/socialbro.png">
+			<img src="img/logos/sopinetoliva.png">
+			<img src="img/logos/svt.png">
+			<img src="img/logos/wul4.png">
+		</div>
+	</div>
+
+	<div id="dialog-message" title="Cookies">
+	  <p>
+	    <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
+	    Necesita tener activadas las <b>Cookies</b>.
+	  </p>
+	</div>
+	
+    <script src="lightbox/dist/js/lightbox-plus-jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+    <script src="js/jquery.featureCarousel.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/pag.js"></script>
+    <script type="text/javascript" src="js/codigo.js"></script>
+    <script type="text/javascript" src="js/animacion.js"></script>
+</body>
+</html>
